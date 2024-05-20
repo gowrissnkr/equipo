@@ -1,0 +1,34 @@
+.navbar_container {
+    /* background-color: blue; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.aside_nav {
+    background-color: blue;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar_container i {
+    font-size: 30px;
+    /* font-weight: 500; */
+    color: white;
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar_container {
+        display: none;
+    }
+    .aside_nav {
+        display: none;
+    }
+}

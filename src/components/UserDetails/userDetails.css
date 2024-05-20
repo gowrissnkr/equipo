@@ -1,0 +1,272 @@
+.user_container {
+    display: grid;
+    grid-template-columns: 200px auto 300px;
+    gap: 10px;
+    padding: 10px 10px 0px 0px;
+    height: 100%;
+}
+
+.user_details_container {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.user_details_left_container {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    gap: 5px;
+}
+
+.about_user_container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 5px;
+}
+
+.user_image {
+    height: 85%;
+    background-color: #e3e3e3;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.fa-video {
+    position: absolute;
+    font-size: 14px;
+    color: white;
+    bottom: 5px;
+    left: 40%;
+    background-color: #008fd5;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.user_details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.user_name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #0093d7;
+}
+
+.user_edit_icons {
+    display: flex;
+    gap: 5px;
+    background-color: #f77800;
+    padding: 2px 5px;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    border-radius: 2px;
+}
+
+.fa-pen {
+    color: white;
+    padding: 2px 5px;
+    font-size: 14px;
+    border-right: 2px solid black;
+}
+
+.user_name button {
+    background-color: #008fd5;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.about_user_status {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.user_status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #0080f4;
+    justify-content: space-between;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.user_status h5 {
+    background-color: #0080f4;
+    width: 100%;
+    text-align: center;
+    color: #fbfdff;
+}
+
+.user_status h6 {
+    background-color: #c2d5e1;
+    width: 100%;
+    text-align: center;
+    color: #fbfdff;
+    width: 100%;
+    text-align: center;
+    color: #323333;
+}
+
+.user_details_right_container {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    gap: 10px;
+}
+
+.user_policy_details {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.user_policy_details h5 {
+    font-weight: 500;
+}
+
+.user_health_details {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 5px;
+}
+
+.radio_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.radio_container {
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+    transform: scale(0.8);
+}
+
+label {
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.user_activity_container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+}
+
+.user_activity_container>div {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+
+.primary_conatiner {
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    gap: 3px;
+}
+
+.primary_wrapper {
+    width: 100%;
+}
+
+.primary_wrapper h6 {
+    font-size: 15px;
+    font-weight: 500;
+    width: 70%;
+}
+
+.primary_conatiner p {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.user_activity {
+    background-color: #00a0fb;
+    padding: 5px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.plus_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user_activity_details {
+    padding: 5px 10px;
+}
+
+@media (max-width: 768px) {
+    .user_container {
+        grid-template-columns: 1fr;
+      
+        grid-template-rows: auto auto auto;
+      
+        padding-left: 10px;
+
+    }
+
+    .user_details_container {
+        grid-template-columns: 1fr;
+       
+        grid-template-rows: auto auto;
+       
+    }
+
+    .user_details_left_container,
+    .user_details_right_container {
+        grid-template-rows: 1fr;
+        
+    }
+
+    .user_activity_container {
+        grid-template-rows: auto auto;
+       
+    }
+
+    .about_user_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .user_image {
+        width: 30%;
+    }
+
+    .user_name {
+      display: block;
+      padding-bottom: 10px;
+    }
+
+    .user_name h3{
+        padding-bottom: 10px;
+      }
+
+    .user_edit_icons {
+        width: 50px;
+        margin-bottom: 10px;
+    }
+    .about_user_container button {
+        margin-right: 10px;
+    }
+}

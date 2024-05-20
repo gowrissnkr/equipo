@@ -1,0 +1,15 @@
+.body_container {
+    display: grid;
+    grid-template-columns: 200px repeat(4,1fr);
+    gap: 10px;
+    padding: 10px 10px 10px 0px ;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .body_container {
+        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+        grid-template-rows: repeat(5, auto); /* Adjust rows for smaller screens */
+        padding-left: 10px;
+    }
+}

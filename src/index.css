@@ -5,9 +5,31 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* <div className='user_details_container'>
+<div className='user_img_container'>
+    <img src={USER_ICON} alt='' className='user_img'/>
+</div>
+<div>
+    <div className='user_details'>
+        <p >Pet3011 Par3011</p>
+        {<img src='' alt='' />}
+        <button>+ Chart</button>
+        <button>+ Enroll</button>
+    </div>
+    <div>
+        <p>Male DOB: 01-Jan-1980 (42 yrs) </p>
+        <p>Ethinicity: Caucasian (European)</p>
+        <p>Occupation: Management</p>
+        <p>Account #: 14251541825 MRN: - (EBS Demo Facility - 35)</p>
+    </div>
+</div>
+</div> */

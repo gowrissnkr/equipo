@@ -1,0 +1,155 @@
+.header_container {
+    background-color:#ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px 0px 5px 10px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.header_search_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-area: "search";
+}
+
+.search_form {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #c8dae2;
+    border-radius: 50px;
+    /* justify-content: flex-end; */
+}
+
+
+.search_input_wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.search_input_box {
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 5px 10px 5px 60px;
+    outline: none;
+}
+
+.icon_container {
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    border-radius: 25px 0 0 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #eff7fc;
+    padding: 0px 5px;
+
+}
+
+.search_icon,
+.dropdown_icon,
+.cross_icon {
+    margin: 0 2px;
+    font-size: 15px;
+    color: #7e8c92;
+}
+
+.cross_icon {
+    position: absolute;
+    right: 10px;
+    align-items: center;
+}
+
+.search_buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 5px;
+}
+
+.search_buttons button {
+    background-color: #008fd5;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+}
+
+.header_profile_container {
+    /* background-color: blue; */
+    grid-area: "profile";
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 0px 10px;
+
+    /* justify-self: end; */
+}
+
+.notification_container {
+    position: relative;
+}
+
+.bell_icon {
+    font-size: 20px;
+}
+
+.notification_count {
+    position: absolute;
+    top: -10px;
+    left: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 5px;
+    font-size: 10px;
+}
+
+.avatar_icon_container {
+    display: flex;
+    gap: 2px;
+}
+
+@media (max-width: 768px) {
+    .header_container {
+        grid-template-columns: 1fr;
+        padding-right: 10px;
+        gap: 5px;
+    }
+
+    .header_profile_container {
+        display: none;
+    }
+
+    .header_search_container {
+        grid-template-columns: 1fr;
+    }
+
+    .search_buttons {
+        display: none;
+    }
+
+    .search_form_wrapper, .search_buttons button {
+        width: 100%;
+    }
+}
+
+/* @media (max-width: 768px) {
+    .header_container {
+        grid-template-columns: 1fr;
+        Single column layout for smaller screens
+        grid-template-areas:
+            "search"
+            "profile";
+        gap: 5px;
+    }
+
+    .header_profile_container {
+        justify-self: start;
+        Align profile section to start on smaller screens
+    }
+} */
